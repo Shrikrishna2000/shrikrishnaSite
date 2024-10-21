@@ -107,6 +107,9 @@ nav {
     height: 40px;
     margin-right: 10px;
 }
+a {
+    text-decoration: none;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -127,3 +130,4 @@ nav {
         height: 30px;
     }
 }
+
