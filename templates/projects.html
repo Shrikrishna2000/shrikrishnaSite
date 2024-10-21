@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction Using Machine Learning</title>
+    <link rel="stylesheet" href="static/css/projects.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Shrikrishna Portfolio</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact Me</a></li>
+        </ul>
+        <div class="profile-icon">
+            <img src="profile.png" alt="Profile Icon">
+        </div>
+    </nav>
+
+    <header>
+        <h1>House Price Prediction Using Machine Learning</h1>
+        <p>Exploring the use of data analysis and machine learning to predict house prices.</p>
+    </header>
+
+    <section class="index">
+        <ul>
+            <li><a href="#abstract">Abstract</a></li>
+            <li><a href="#insights">Insights I Found</a></li>
+            <li><a href="#steps">Steps I Took</a></li>
+            <li><a href="#conclusion">Conclusions</a></li>
+        </ul>
+    </section>
+
+    <section id="abstract">
+        <h2>1. Abstract</h2>
+        <p>House prices are influenced by a multitude of factors, making it essential to have a robust prediction model for accurate pricing. This project involved building a predictive model to estimate house prices using machine learning. The project covered data cleaning, preprocessing, and exploratory data analysis (EDA) to understand the key features affecting house prices. Various machine learning models were trained and compared based on metrics like Root Mean Squared Error (RMSE), Mean Squared Error (MSE), and latency time to identify the best-performing model. Finally, the chosen model was deployed using Docker for seamless integration and accessibility.</p>
+    </section>
+
+    <section id="insights">
+        <h2>2. Insights I Found</h2>
+        <p>During the analysis and modeling, several interesting insights were discovered:</p>
+        <ul>
+            <li><strong>Key Features Influencing House Prices:</strong> Location, property size, number of bedrooms, and proximity to amenities were the most significant factors influencing house prices.</li>
+            <li><strong>Impact of Property Size and Location:</strong> Larger properties in prime locations had a steep price increase compared to smaller or mid-sized properties in less desirable areas.</li>
+            <li><strong>Trends in Pricing:</strong> Seasonal trends and economic indicators also showed a correlation with property prices, suggesting market conditions significantly affect pricing models.</li>
+        </ul>
+        <div class="image-placeholder">
+            <img src="images/insights.png" alt="Data Insights Example" />
+            <p>Image: Example of data insights from EDA.</p>
+        </div>
+    </section>
+
+    <section id="steps">
+        <h2>3. Steps I Took</h2>
+        <p>Here’s a breakdown of the approach I followed to complete the project:</p>
+        
+        <div class="project-steps">
+            <h3>a. Data Cleaning and Preprocessing</h3>
+            <ol>
+                <li>Handled missing values by using imputation techniques and removing unnecessary data.</li>
+                <li>Performed outlier removal to prevent skewed model predictions.</li>
+                <li>Created new features (e.g., price per square foot) to enhance model performance.</li>
+            </ol>
+
+            <h3>b. Exploratory Data Analysis (EDA)</h3>
+            <p>Used visualizations like heatmaps and distribution plots to uncover patterns and correlations in the data.</p>
+            <div class="image-placeholder">
+                <img src="images/eda.png" alt="Exploratory Data Analysis" />
+                <p>Image: Sample heatmap from EDA showing correlations.</p>
+            </div>
+
+            <h3>c. Training Different ML Models</h3>
+            <ol>
+                <li>Trained multiple machine learning models including <strong>Linear Regression</strong>, <strong>Decision Trees</strong>, <strong>Random Forests</strong>, and <strong>XGBoost</strong>.</li>
+                <li>Compared performances using RMSE, MSE, and Latency Time to evaluate each model.</li>
+                <li>Conducted hyperparameter tuning to optimize model performance.</li>
+            </ol>
+
+            <h3>d. Model Comparison and Selection</h3>
+            <p>Compared models and chose <strong>XGBoost</strong> for its high accuracy and efficiency in handling non-linear relationships.</p>
+
+            <h3>e. Deployment Using Docker</h3>
+            <ol>
+                <li>Containerized the model using Docker for easy deployment and integration.</li>
+                <li>Created a REST API to allow users to input property details and receive predicted prices in real-time.</li>
+                <li>Ensured scalability by enabling multiple instances to handle larger volumes of requests.</li>
+            </ol>
+            <div class="image-placeholder">
+                <img src="images/docker.png" alt="Docker Deployment" />
+                <p>Image: Model deployed in Docker environment.</p>
+            </div>
+        </div>
+
+        <div class="tools-icons">
+            <h3>Tools Used:</h3>
+            <ul>
+                <li><img src="icons/python.png" alt="Python Icon"> Python</li>
+                <li><img src="icons/docker.png" alt="Docker Icon"> Docker</li>
+                <li><img src="icons/spark.png" alt="Spark Icon"> Apache Spark</li>
+                <li><img src="icons/tensorflow.png" alt="TensorFlow Icon"> TensorFlow</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="conclusion">
+        <h2>4. Conclusions</h2>
+        <p>The project successfully demonstrated how machine learning can be used to predict house prices with high accuracy. The use of XGBoost as the final model provided a reliable balance of speed and accuracy, making it ideal for real-time applications. This project also highlighted the importance of understanding data through EDA, as well as the need for proper feature engineering and model tuning. Future enhancements could include incorporating more dynamic features such as market trends and economic indicators to improve prediction accuracy.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Shrikrishna Soni - House Price Prediction Project</p>
+    </footer>
+</body>
+</html>

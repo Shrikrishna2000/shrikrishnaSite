@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfb;
+    color: #1f3c45;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fdfdfb;
+    padding: 15px 0;
+    border-bottom: 2px solid #eee;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo h1 {
+    color: #1f3c45;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* General Container Styling */
+.project-steps {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+/* Heading Styles */
+.project-steps h3 {
+    color: #2c3e50;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Steps List Styling */
+.project-steps ol {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    counter-reset: step-counter;
+}
+
+.project-steps ol li {
+    counter-increment: step-counter;
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add Step Counter */
+.project-steps ol li::before {
+    content: counter(step-counter) ". ";
+    font-weight: bold;
+    color: #3498db;
+    position: absolute;
+    left: -30px;
+}
+
+/* Tools List Styling */
+.project-steps ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.project-steps ul li {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin: 5px;
+}
+
+/* Tools Icons Styling */
+.tools-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.tools-icons img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-steps {
+        padding: 20px;
+    }
+
+    .project-steps h3 {
+        font-size: 20px;
+    }
+
+    .project-steps ol li {
+        font-size: 14px;
+    }
+
+    .tools-icons img {
+        width: 30px;
+        height: 30px;
+    }
+}
